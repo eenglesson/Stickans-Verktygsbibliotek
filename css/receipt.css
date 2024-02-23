@@ -1,0 +1,185 @@
+:root {
+  --primary-color: rgba(21, 102, 81, 1);
+  --text-color: rgba(64, 64, 64, 1);
+  --neutral-10-color: rgb(255, 255, 255);
+  --neutral-20-color: rgb(245, 245, 245);
+  --neutral-30-color: rgb(237, 237, 237);
+  --neutral-40-color: rgb(237, 237, 237);
+  --neutral-50-color: rgb(194, 194, 194);
+  --neutral-60-color: rgb(158, 158, 158);
+  --neutral-70-color: rgb(117, 117, 117);
+  --neutral-80-color: rgb(97, 97, 97);
+  --neutral-90-color: rgb(64, 64, 64);
+  --neutral-100-color: rgb(10, 10, 10);
+
+  --heading-1-font-weight: 800;
+  --heading-1-font-size: 40px;
+  --heading-2-font-weight: 800;
+  --heading-2-font-size: 32px;
+  --heading-3-font-weight: 700;
+  --heading-3-font-size: 24px;
+  --heading-4-font-weight: 700;
+  --heading-4-font-size: 20px;
+  --heading-5-font-weight: 400;
+  --heading-5-font-size: 18px;
+  --body-regular-font-weight: 400;
+  --body-regular-font-size: 16px;
+  --body-bold-font-weight: 700;
+  --body-bold-font-size: 16px;
+  --body-small-regular-font-weight: 400;
+  --body-small-regular-font-size: 14px;
+  --body-small-bold-font-weight: 700;
+  --body-small-bold-font-size: 14px;
+  --caption-font-weight: 400;
+  --caption-font-size: 12px;
+  --shadow-medium: 0px 2px 24px 0px rgba(0, 0, 0, 0.2);
+  --minimum-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  line-height: 120%;
+}
+
+body {
+  background-color: var(--neutral-20-color);
+}
+
+.body-text-notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / -1;
+  margin-bottom: 24px;
+}
+
+.body-title {
+  color: var(--text-color);
+  font-size: var(--heading-3-font-size);
+  font-weight: var(--heading-3-font-weight);
+}
+
+.body-text {
+  grid-column: 1 / -1;
+  color: var(--text-color);
+  margin-top: 16px;
+  font-size: var(--body-bold-font-size);
+  font-weight: var(--body-bold-font-weight);
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+
+.body-text-green {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 1px;
+}
+
+.body-text-filter {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  margin-top: 32px;
+}
+
+/* RECEIPT SECTION */
+
+.receipt-container {
+  background-color: var(--neutral-10-color);
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow-medium);
+}
+
+.receipt-container__checkmark-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.dotted-line-receipt {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed var(--neutral-50-color);
+  margin-top: 32px;
+}
+
+.receipt-container-section {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.receipt-title {
+  font-size: var(--heading-3-font-size);
+  font-weight: var(--heading-3-font-weight);
+  color: var(--text-color);
+}
+
+.receipt-info {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--text-color);
+  font-size: var(--body-small-regular-font-size);
+  font-weight: var(--body-small-regualr-font-weight);
+}
+
+.receipt-rightside {
+  font-size: var(--body-small-regular-font-size);
+  font-weight: var(--body-small-bold-font-weight);
+}
+
+.receipt-green {
+  color: var(--primary-color);
+}
+
+.receipt-borrow-container {
+  margin-top: 32px;
+  font-size: var(--heading-5-font-size);
+  font-weight: 600;
+}
+
+.big-numbers {
+  font-size: var(--heading-5-font-size);
+  font-weight: 600;
+}
+
+.button-secondary {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+  border: 1px solid var(--neutral-50-color);
+  font-size: var(--body-regular-font-size);
+  margin-bottom: 32px;
+}
+
+/* BUTTON BOTTOM */
+.button-default {
+  margin-top: 24px;
+  width: 100%;
+  grid-column: 1 / -1;
+}

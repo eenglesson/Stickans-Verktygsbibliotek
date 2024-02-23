@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/components/components.css">
+  <link rel="stylesheet" href="/css/receipt.css">
+  <title>Receipt</title>
+</head>
+
+<body>
+  <main class="frame">
+
+    <aside class="body-text-notification">
+      <h2 class="body-title">Mitt Kvitto</h2>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+          stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </aside>
+
+    <section class="receipt-container">
+      <aside class="receipt-container__checkmark-container">
+        <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="28.5" cy="28" r="28" fill="#156651" fill-opacity="0.1" />
+          <path
+            d="M28.4998 14.6667C21.1532 14.6667 15.1665 20.6533 15.1665 28C15.1665 35.3467 21.1532 41.3333 28.4998 41.3333C35.8465 41.3333 41.8332 35.3467 41.8332 28C41.8332 20.6533 35.8465 14.6667 28.4998 14.6667ZM34.8732 24.9333L27.3132 32.4933C27.1265 32.68 26.8732 32.7867 26.6065 32.7867C26.3398 32.7867 26.0865 32.68 25.8998 32.4933L22.1265 28.72C21.7398 28.3333 21.7398 27.6933 22.1265 27.3067C22.5132 26.92 23.1532 26.92 23.5398 27.3067L26.6065 30.3733L33.4598 23.52C33.8465 23.1333 34.4865 23.1333 34.8732 23.52C35.2598 23.9067 35.2598 24.5333 34.8732 24.9333Z"
+            fill="#156651" />
+        </svg>
+        <h2 class="receipt-title">Reservationen Lyckades</h2>
+      </aside>
+
+      <span class="dotted-line-receipt"></span>
+
+      <section class="receipt-container-section">
+        <aside class="receipt-order-container receipt-info">
+          <p>Ordernummer</p>
+          <p class="receipt-rightside">000083747214</p>
+        </aside>
+        <aside class="receipt-date-container receipt-info">
+          <p>Datum</p>
+          <p class="receipt-rightside">Feb 27, 2024</p>
+        </aside>
+        <aside class="receipt-clock-container receipt-info">
+          <p>Klockan</p>
+          <p class="receipt-rightside">16:30</p>
+        </aside>
+        <aside class="receipt-tool-container receipt-info">
+          <p>Verktyg</p>
+          <p class="receipt-rightside receipt-green">Skruvdragare</p>
+        </aside>
+      </section>
+
+      <span class="dotted-line-receipt"></span>
+
+      <aside class="receipt-borrow-container receipt-info">
+        <p>Lånas till</p>
+        <p class="receipt-rightside big-numbers">2024-04-07</p>
+      </aside>
+
+      <span class="dotted-line-receipt"></span>
+
+      <button class="button-secondary">
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.31982 12.18L11.8798 14.74L14.4398 12.18" stroke="#156651" stroke-width="1.5"
+            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11.8799 4.5V14.67" stroke="#156651" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M20 12.68C20 17.1 17 20.68 12 20.68C7 20.68 4 17.1 4 12.68" stroke="#156651" stroke-width="1.5"
+            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Ladda Ner Kvitto</button>
+
+    </section>
+
+    <button class="button-default">Gå Vidare</button>
+
+    <section class="navbar-container">
+      <aside class="navbar-container__box">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9 22V12H15V22M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <h2>Hem</h2>
+      </aside>
+      <aside class="navbar-container__box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+          </g>
+        </svg>
+        <h2>Kundvagn</h2>
+      </aside>
+      <aside class="navbar-container__box">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.7841 20.7634V18.7634C19.7841 17.7026 19.3626 16.6851 18.6125 15.935C17.8623 15.1849 16.8449 14.7634 15.7841 14.7634H7.78406C6.72319 14.7634 5.70578 15.1849 4.95563 15.935C4.20548 16.6851 3.78406 17.7026 3.78406 18.7634V20.7634M15.7841 6.76343C15.7841 8.97257 13.9932 10.7634 11.7841 10.7634C9.57492 10.7634 7.78406 8.97257 7.78406 6.76343C7.78406 4.55429 9.57492 2.76343 11.7841 2.76343C13.9932 2.76343 15.7841 4.55429 15.7841 6.76343Z"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <h2>Mitt Konto</h2>
+      </aside>
+    </section>
+  </main>
+</body>
+
+</html>
